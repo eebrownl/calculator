@@ -6,7 +6,7 @@
 body {
     margin: 0;
     padding: 0;
-    background:linear-gradient(to right, #bfecdb, #075235)
+    background:linear-gradient(to right, #faf9f9, #8e8f8e)
 }
 
 .container {
@@ -26,6 +26,13 @@ body {
     cursor: pointer;
     font-size: 2rem;
     border: 1px, solid black;
+}
+.operator {
+    background-color: lightsteelblue;
+}
+
+.number, 
+[data-action='decimal'] {
     background-color: whitesmoke
 }
 
@@ -55,4 +62,10 @@ button:hover {
     word-break: break-all;
     font-size: 2rem;
     height: 100px
+}
+
+.all-clear, 
+.equals, 
+[data-action='clear'] {
+    background-color: salmon;
 }
