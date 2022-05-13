@@ -14,11 +14,15 @@ body {
     justify-content: center;
     align-content: center;
     min-height: 100vh;
-    grid-template-columns: repeat(4, 100px);
-    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
-.container > button {
+.keys {
+    display: grid; 
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(100px, auto) repeat(5, 100px);
+}
+
+.keys > button {
     cursor: pointer;
     font-size: 2rem;
     border: 1px, solid black;
@@ -50,4 +54,5 @@ button:hover {
     word-wrap: break-word;
     word-break: break-all;
     font-size: 2rem;
+    height: 100px
 }
